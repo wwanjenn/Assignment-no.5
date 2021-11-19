@@ -12,11 +12,11 @@ def threeNumbers():
     return firstNumberI, secondNumberI, thirdNumberI
 # 2 If else statments
 def ifElsePrint(firstNumberP, secondNumberP, thirdNumberP):
-    if firstNumberP >= secondNumberP and firstNumberP >= thirdNumberP:
+    if firstNumberP <= secondNumberP and firstNumberP <= thirdNumberP:
         print(f'The Lowest Number is {firstNumberP}.')
-    elif secondNumberP >= firstNumberP and secondNumberP >= thirdNumberP:
+    elif secondNumberP <= firstNumberP and secondNumberP <= thirdNumberP:
         print(f'The Lowest Number is {secondNumberP}.')
-    elif thirdNumberP >= firstNumberP and thirdNumberP >= secondNumberP:
+    elif thirdNumberP <= firstNumberP and thirdNumberP <= secondNumberP:
         print(f'The Lowest Number is {thirdNumberP}.')
 # 3 Calling of Function
 
