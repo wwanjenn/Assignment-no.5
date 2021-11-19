@@ -23,9 +23,14 @@ def ifElse(ageF):
         stageF = 'Debut'
     elif ageF > 18:
         stageF = 'Adult'
-    return ageF, stageF
+    return stageF
 # 3 Print
-def printFunction(ageP, stageP):
-    print(f'Age: {ageP}')
+def printFunction(stageP):
     print(f'Life Stage: {stageP}')
 # 4 Call for function
+ 
+age = inputAge()
+
+stage = ifElse(age)
+
+printFunction(stage)
