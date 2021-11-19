@@ -82,6 +82,7 @@ def ifElse(percentGradeC):
             descriptionC = 'Failure'
         elif percentGradeC < 65 or percentGradeC >100:
             print('You must enter a Valid Grade(65-100)')
+            exit()
     return gradeMarkC, descriptionC
 
 #Print
