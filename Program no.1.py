@@ -25,15 +25,45 @@ def inputGrade():
     percentGrade = float(input('Grade Percentage: '))
     return percentGrade
 #2 If else statements
-#2.1
-
-#2.2
-#2.3
-#2.4
-# 2.5
-# 2.6
-# 2.7
-# 2.8
-# 2.9
-# 2.10
-#3 Print
+def ifElse(percentGradeC):
+    #2.1
+    if percentGradeC >= 97 or percentGradeC <= 100:
+        gradeMark = 1.0
+        description = 'Excellent'
+    #2.2
+    elif percentGradeC >= 94 or percentGradeC <= 96:
+        gradeMark = 1.25
+        description = 'Excellent'
+    #2.3
+    elif percentGradeC >= 91 or percentGradeC <= 93:
+        gradeMark = 1.5
+        description = 'Very Good'
+    #2.4
+    elif percentGradeC >= 88 or percentGradeC <= 90:
+        gradeMark = 1.75
+        description = 'Very Good'
+    # 2.5
+    elif percentGradeC >= 85 or percentGradeC <= 87:
+        gradeMark = 2.0
+        description = 'Good'
+    # 2.6
+    elif percentGradeC >= 82 or percentGradeC <= 84:
+        gradeMark = 2.25
+        description = 'Good'
+    # 2.7
+    elif percentGradeC >= 79 or percentGradeC <= 81:
+        gradeMark = 2.5
+        description = 'Satisfactory'
+    # 2.8
+    elif percentGradeC >= 76 or percentGradeC <= 78:
+        gradeMark = 2.75
+        description = 'Satisfactory'
+    # 2.9
+    elif percentGradeC > 74 or percentGradeC <= 76:
+        gradeMark = 3.0
+        description = 'Passing'
+    # 2.10
+    elif percentGradeC >= 65 or percentGradeC <= 74:
+        gradeMark = 5.0
+        description = 'Failure'
+    return gradeMark, description
