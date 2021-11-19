@@ -27,15 +27,15 @@ def inputGrade():
 #2 If else statements
 def ifElse(percentGradeC):
         # Incomplete
-    if percentGradeC = 'Incomplete' or percentGradeC = 'Inc.':
+    if percentGradeC == 'Incomplete' or percentGradeC == 'Inc.':
         gradeMarkC = 'Inc.'
         descriptionC = 'Incomplete' 
     # Withdrawn
-    elif percentGradeC = 'Withdrawn' or percentGradeC = 'W':
+    elif percentGradeC == 'Withdrawn' or percentGradeC == 'W':
         gradeMarkC = 'W'
         descriptionC = 'Withdrawn'
     # Dropped
-    elif percentGradeC = 'Dropped' or percentGradeC = 'D':
+    elif percentGradeC == 'Dropped' or percentGradeC == 'D':
         gradeMarkC = 'D'
         descriptionC = 'Dropped'
     else:
@@ -83,7 +83,11 @@ def ifElse(percentGradeC):
     return gradeMarkC, descriptionC
 
 #Print
+def output(percentGradeP, gradeMarkP, descriptionP):
+    print(f'Input Grade: {percentGradeP}')
+    print(f'Grade/Mark: {gradeMarkP}')
+    print(f'Description: {descriptionP}')
 
 percentGrade = inputGrade()
 gradeMark, description = ifElse(percentGrade)
-print(gradeMark, description)
+output(percentGrade, gradeMark, description)
