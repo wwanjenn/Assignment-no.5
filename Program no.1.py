@@ -66,4 +66,18 @@ def ifElse(percentGradeC):
     elif percentGradeC >= 65 or percentGradeC <= 74:
         gradeMark = 5.0
         description = 'Failure'
+    # Incomplete
+    elif percentGradeC = 'Incomplete':
+        gradeMark = 'Inc.'
+        description = 'Incomplete'
+    # Withdrawn
+    elif percentGradeC = 'Withdrawn':
+        gradeMark = 'W'
+        description = 'Withdrawn'
+    # Dropped
+    elif percentGradeC = 'Dropped':
+        gradeMark = 'D'
+        description = 'Dropped'
     return gradeMark, description
+
+#Print
