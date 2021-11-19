@@ -13,6 +13,17 @@ def inputAge():
     ageI = int(input('Age: '))
     return ageI
 
-# 2 If else statement with print
+# 2 If else statement
+def ifElsePrint(ageF):
+    if ageF >= 0 and ageF <= 12:
+        ageE = 'Kid'
+    elif ageF >= 13 and ageF <= 17:
+        ageE = 'Teen'
+    elif ageF == 18:
+        ageE = 'Debut'
+    elif ageF > 18:
+        ageE = 'Adult'
 
-# 3 Call for function
+# 3 Print
+
+# 4 Call for function
