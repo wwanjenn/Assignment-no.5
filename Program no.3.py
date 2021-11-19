@@ -10,9 +10,16 @@
 # Steps
 # 1 Ask for age
 def inputAge():
-    ageI = int(input('Age: '))
-    return ageI
-
+    while True:
+        try:
+            ageI = int(input('Age: '))
+            if ageI >= 0:
+                return ageI
+            elif ageI < 0:
+                print('Please Enter Valid Age.')
+                exit()
+        except ValueError:
+            print('Please Enter Valid Age.')
 # 2 If else statement
 def ifElse(ageF):
     if ageF >= 0 and ageF <= 12:
