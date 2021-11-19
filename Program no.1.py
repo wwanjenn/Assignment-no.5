@@ -6,7 +6,9 @@
 
 #Steps
 #1 Ask for grade percentage
-
+def inputGrade():
+    percentGrade = float(input('Grade Percentage: '))
+    return percentGrade
 #2 If else statements
 
 #3 Print
