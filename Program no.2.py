@@ -6,10 +6,14 @@
 # Steps 
 # 1 Ask for 3 numbers
 def threeNumbers():
-    firstNumberI = int(input('1st Number: '))
-    secondNumberI = int(input('2nd Number: '))
-    thirdNumberI = int(input('3rd Number: '))
-    return firstNumberI, secondNumberI, thirdNumberI
+    while True:
+        try:
+            firstNumberI = int(input('1st Number: '))
+            secondNumberI = int(input('2nd Number: '))
+            thirdNumberI = int(input('3rd Number: '))
+            return firstNumberI, secondNumberI, thirdNumberI
+        except ValueError:
+            print('Please enter a Valid Number.')
 # 2 If else statments
 def ifElsePrint(firstNumberP, secondNumberP, thirdNumberP):
     if firstNumberP <= secondNumberP and firstNumberP <= thirdNumberP:
@@ -18,6 +22,8 @@ def ifElsePrint(firstNumberP, secondNumberP, thirdNumberP):
         print(f'The Lowest Number is {secondNumberP}.')
     elif thirdNumberP <= firstNumberP and thirdNumberP <= secondNumberP:
         print(f'The Lowest Number is {thirdNumberP}.')
+    
+
 # 3 Calling of Function
 
 firstnumber, secondnumber, thirdnumber = threeNumbers()
