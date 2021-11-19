@@ -9,5 +9,10 @@
 
 # Steps
 # 1 Ask for age
+def inputAge():
+    ageI = int(input('Age: '))
+    return ageI
+
 # 2 If else statement with print
+
 # 3 Call for function
