@@ -5,6 +5,10 @@
 
 # Steps 
 # 1 Ask for 3 numbers
-
+def threeNumbers():
+    firstNumberI = int(input('1st Number: '))
+    secondNumberI = int(input('2nd Number: '))
+    thirdNumberI = int(input('3rd Number: '))
+    return firstNumberI, secondNumberI, thirdNumberI
 # 2 If else statments
 # 3 Print
