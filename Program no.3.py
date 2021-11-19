@@ -14,16 +14,18 @@ def inputAge():
     return ageI
 
 # 2 If else statement
-def ifElsePrint(ageF):
+def ifElse(ageF):
     if ageF >= 0 and ageF <= 12:
-        ageE = 'Kid'
+        stageF = 'Kid'
     elif ageF >= 13 and ageF <= 17:
-        ageE = 'Teen'
+        stageF = 'Teen'
     elif ageF == 18:
-        ageE = 'Debut'
+        stageF = 'Debut'
     elif ageF > 18:
-        ageE = 'Adult'
-
+        stageF = 'Adult'
+    return ageF, stageF
 # 3 Print
-
+def printFunction(ageP, stageP):
+    print(f'Age: {ageP}')
+    print(f'Life Stage: {stageP}')
 # 4 Call for function
