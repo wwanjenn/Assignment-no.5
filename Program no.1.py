@@ -41,46 +41,46 @@ def ifElse(percentGradeC):
     else:
         percentGradeC = float(percentGradeC)
     #2.1
-        if percentGradeC >= 97 and percentGradeC <= 100:
+        if percentGradeC >= 96.5 and percentGradeC <= 100:
             gradeMarkC = 1.0
             descriptionC = 'Excellent'
     #2.2
-        elif percentGradeC >= 94 and percentGradeC <= 96:
+        elif percentGradeC >= 93.5 and percentGradeC <= 96.4:
             gradeMarkC = 1.25
             descriptionC = 'Excellent'
     #2.3
-        elif percentGradeC >= 91 and percentGradeC <= 93:
+        elif percentGradeC >= 90.5 and percentGradeC <= 93.4:
             gradeMarkC = 1.5
             descriptionC = 'Very Good'
     #2.4
-        elif percentGradeC >= 88 and percentGradeC <= 90:
+        elif percentGradeC >= 87.5 and percentGradeC <= 90.4:
             gradeMarkC = 1.75
             descriptionC = 'Very Good'
     # 2.5
-        elif percentGradeC >= 85 and percentGradeC <= 87:
+        elif percentGradeC >= 84.5 and percentGradeC <= 87.4:
             gradeMarkC = 2.0
             descriptionC = 'Good'
     # 2.6
-        elif percentGradeC >= 82 and percentGradeC <= 84:
+        elif percentGradeC >= 81.5 and percentGradeC <= 84.4:
             gradeMarkC = 2.25
             descriptionC = 'Good'
     # 2.7
-        elif percentGradeC >= 79 and percentGradeC <= 81:
+        elif percentGradeC >= 78.5 and percentGradeC <= 81.4:
             gradeMarkC = 2.5
             descriptionC = 'Satisfactory'
     # 2.8
-        elif percentGradeC >= 76 and percentGradeC <= 78:
+        elif percentGradeC >= 75.5 and percentGradeC <= 78.4:
             gradeMarkC = 2.75
             descriptionC = 'Satisfactory'
     # 2.9
-        elif percentGradeC > 74 and percentGradeC <= 76:
+        elif percentGradeC >= 74.5 and percentGradeC <= 75.4:
             gradeMarkC = 3.0
             descriptionC = 'Passing'
     # 2.10
-        elif percentGradeC >= 65 and percentGradeC <= 74:
+        elif percentGradeC >= 64.5 and percentGradeC <= 74.4:
             gradeMarkC = 5.0
             descriptionC = 'Failure'
-        elif percentGradeC < 65 or percentGradeC >100:
+        elif percentGradeC <= 64.4 or percentGradeC >100:
             print('You must enter a Valid Grade(65-100)')
             exit()
     return gradeMarkC, descriptionC
